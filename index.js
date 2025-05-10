@@ -5,7 +5,7 @@
 // @description  Remove arXiv HTML annoying banner and report button.
 // @author       undefined443
 // @match        https://arxiv.org/html/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
+// @icon         https://static.arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png
 // @grant        none
 // @license      MIT
 // ==/UserScript==
