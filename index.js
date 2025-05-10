@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         arXiv HTML cleaner
 // @namespace    https://github.com/undefined443
-// @version      0.0.1
+// @version      0.0.2
 // @description  Remove arXiv HTML annoying banner and report button.
 // @author       undefined443
 // @match        https://arxiv.org/html/*
