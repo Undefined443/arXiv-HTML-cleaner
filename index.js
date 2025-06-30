@@ -5,6 +5,7 @@
 // @description  Remove arXiv HTML annoying banner and report button.
 // @author       undefined443
 // @match        https://arxiv.org/html/*
+// @match        https://arxiv.org/abs/*
 // @icon         https://static.arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png
 // @grant        none
 // @license      MIT
@@ -19,6 +20,7 @@
     }
   }
 
+  // Dynamically remove elements
   const observer = new MutationObserver((mutationsList) => {
     for (const mutation of mutationsList) {
       if (mutation.type === "childList") {
@@ -32,7 +34,11 @@
 
   const config = { childList: true, subtree: true };
   observer.observe(document.body, config);
-  removeElement(".desktop_header");
-  removeElement(".package-alerts");
+
+  // Static removal of elements
+  removeElement(".desktop_header");  // Remove top banner at html page
+  removeElement(".package-alerts");  // Remove package alerts at html page
+  removeElement(".slider-wrapper");  // Remove top banner at abs page
   removeElement("#openForm");
+  removeElement("#cu-identity");     // Remove Cornell University identity at abs page
 })();
